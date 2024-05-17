@@ -1,0 +1,481 @@
+/* Reset some default styles for consistency */
+h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-align: center;
+    color: goldenrod;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Basic styling */
+body {
+    
+    background-color: black;
+    line-height: 1.6;
+    background-image: url('images/dine.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    background-color: black;
+    border-radius: 30px;
+    background-image: url('images/img.jpeg');
+    color: #fff;
+    background-size: cover;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+ul{
+    font-size: large;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('images/imgg.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    box-shadow: #333;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e35500;
+    box-shadow: #333;
+    box-sizing: border-box;
+}
+
+/* Menu Section Styles */
+.menu {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.menu h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.menu-item p {
+    color: #666;
+}
+
+/* Location Section Styles */
+.location {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.location img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.location h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.location p {
+    color: #333;
+}
+
+/* Reservation Form Styles */
+.reservation-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="date"],
+.reservation-form input[type="time"],
+.reservation-form input[type="number"],
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Language Buttons */
+/* Language Switch Styles */
+.language-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.language-toggle {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.language-toggle:hover {
+    background-color: #e35500;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    background-image: url('images/img.jpeg');
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px 0;
+    bottom: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+}
+/* Reservation Form Styles */
+/* Reservation Form Styles */
+.reservation-form {
+    background-color: goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 500px; /* Set a maximum width for the form */
+    padding: 20px;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="date"],
+.reservation-form input[type="time"],
+.reservation-form input[type="number"],
+.reservation-form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+
+.reservation-form textarea {
+    resize: vertical;
+}
+.reservation-form button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-form button:hover {
+    background-color: #e35500;
+}
+
+
+/* Keyframe animation for fade-in effect */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content{
+    font-size: 40px;
+    background-image: url('images/shine.jpeg');
+    text-align: center;
+    border-radius: 30px;
+    color: goldenrod;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    background-position-x: cover;
+    background-position: cover;
+}
+h4 {
+    text-align: center;
+    color: goldenrod;
+    font-size: 26px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+/* Style the map section */
+#map-section {
+    display: flex;
+    justify-content: center; /* Center-align horizontally */
+    align-items: center; /* Center-align vertically */
+    
+}
+h5{
+    text-align: center;
+    color: goldenrod;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+/* Job Openings Section Styles */
+#job-openings {
+    text-align: center;
+    padding: 20px;
+}
+
+.job-opening {
+    background-color: goldenrod;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 50px;
+}
+
+.job-opening h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-opening p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.apply-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #e35500;
+}
+
+
+/* Style for the "Order Takeout" button */
+.order-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Ensure the button takes up the full width of the menu item */
+    margin-top: 10px; /* Add spacing between the dish description and the button */
+}
+
+.order-button:hover {
+    background-color: #e35500;
+}
+/* Style for the menu items grid */
+.menu-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the column size as needed */
+    grid-gap: 20px; /* Adjust the gap between items as needed */
+}
+
+/* Style for individual menu items (no need for float) */
+.menu-item {
+    background-color: goldenrod;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+/* Style for individual menu items */
+.menu-item {
+    display: inline-block;
+    align-items: center;
+    width: 48%; /* Adjust the width as needed to fit your design */
+    margin: 1%; /* Add a small margin between items */
+    background-color: goldenrod;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    float: left; /* Float the items to the left */
+    clear: both; /* Clear the float to prevent issues with other elements */
+}
+
+/* Clearfix to prevent container collapsing */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Style for individual menu items */
+.menu-item {
+    display: inline-block;
+    width: calc(50% - 20px); /* Adjust the width to fit two items side by side with spacing */
+    margin: 20px 10px; /* Add margin to space out the items */
+    background-color: goldenrod;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center-align the content */
+    overflow: hidden; /* Ensure that the images don't overflow the container */
+}
+
+/* Style for images within menu items */
+.menu-item img {
+    max-width: 100%; /* Ensure images don't exceed the width of the container */
+    height: auto; /* Maintain the aspect ratio of the images */
+    display: block; /* Remove any extra spacing around the images */
+    margin: 0 auto; /* Center-align the images horizontally */
+}
+
+/* ... (rest of your menu item styles, including the "Order Takeout" button) ... */
+
+
+
+/* ... (rest of your menu item styles) ... */
+
+/* Style for the menu items container */
+.menu-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+    justify-content: center; /* Distribute items with equal space between them */
+}
+
+/* Style for individual menu items */
+.menu-item {
+    width: calc(50% - 10px); /* Adjust the width to fit two items side by side with spacing */
+    margin-bottom: 20px; /* Add spacing between rows of menu items */
+    background-color: goldenrod;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex; /* Use flexbox to align image and details */
+    flex-direction: column;
+
+    /* Stack image and details vertically within each menu item */
+}
+
+
+
+
+/* ... (rest of your menu item styles, including the "Order Takeout" button) ... */
+
+
+
+

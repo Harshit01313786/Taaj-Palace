@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TAAJ PALACE</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="css/images/imgg.png" alt="Restaurant Logo">
+            </div>
+            <ul>
+                <li><a href="lunch-menu.html">Lunch Menu</a></li>
+                <li><a href="dinner-menu.html">Dinner Menu</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="language-switch">
+        <button class="language-toggle" id="toggleLanguage">EN</button>
+    </div>
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="en">Welcome to TAAJ PALACE</h1>
+            <h1 class="fr" style="display:none;">Bienvenue au Palais TAJ</h1>
+            <p class="en">Discover exquisite flavors from around the world.</p>
+            <p class="fr" style="display:none;">Découvrez des saveurs exquises du monde entier.</p>
+            <a href="#reservations" class="cta-button">Make a Reservation</a>
+        </div>
+
+    <section id="locations">
+        <h4 class="en">Locations</h4>
+        <h4 class="fr" style="display:none;">Emplacements</h4>
+    </section>
+    <section id="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d6050774.600768254!2d-86.51742247378648!3d42.22556185323122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d44.6627436!2d-79.6715076!4m5!1s0x8838922e0d60bc13%3A0xd5705962ecfbaa49!2sTaj%20Palace%2C%203794%20Fishinger%20Blvd%2C%20Hilliard%2C%20OH%2043026%2C%20United%20States!3m2!1d40.0309935!2d-83.11395309999999!5e0!3m2!1sen!2sca!4v1695597002745!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section><br>
+    <div>
+    <section id="reservations">
+        <h2 class="en">Reservations</h2>
+        <h2 class="fr" style="display:none;">Réservations</h2>
+        <h2 class="en">Book a table for an unforgettable dining experience. Fill out the form below:</h2>
+        <h2 class="fr" style="display:none;">Réservez une table pour une expérience gastronomique inoubliable. Remplissez le formulaire ci-dessous :</h2>
+        
+        <form action="process_reservation.php" method="POST" class="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+    
+            <label for="party-size">Party Size:</label>
+            <input type="number" id="party-size" name="party-size" min="1" required>
+    
+            <label for="special-requests">Special Requests:</label>
+            <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    </div><br>
+    
+
+    <section id="jobs">
+        <h5 class="en">Jobs</h5>
+        <h5 class="fr" style="display:none;">Emplois</h5>
+        <div class="job-opening">
+            <h3 class="en">Server</h3>
+            <h3 class="fr" style="display:none;">Serveur</h3>
+            <p class="en">We are hiring experienced servers. Apply today by sending your resume to <a href="mailto:jobs@restaurantname.com">jobs@restaurantname.com</a>.</p>
+            <p class="fr" style="display:none;">Nous recrutons des serveurs expérimentés. Postulez dès aujourd'hui en envoyant votre CV à <a href="mailto:jobs@restaurantname.com">jobs@restaurantname.com</a>.</p>
+            <button class="apply-button">Apply Now</button>
+        </div>
+        <div class="job-opening">
+            <h3 class="en">Chef</h3>
+            <h3 class="fr" style="display:none;">Chef</h3>
+            <p class="en">We are looking for talented chefs to join our kitchen team. Apply now by sending your resume to <a href="mailto:jobs@restaurantname.com">jobs@restaurantname.com</a>.</p>
+            <p class="fr" style="display:none;">Nous recherchons des chefs talentueux pour rejoindre notre équipe de cuisine. Postulez dès maintenant en envoyant votre CV à <a href="mailto:jobs@restaurantname.com">jobs@restaurantname.com</a>.</p>
+            <button class="apply-button">Apply Now</button>
+        </div>
+        <!-- Add more job openings as needed -->
+    </section>
+    <footer>
+        <p>&copy; 2023 TAAJ PALACE</p></footer>
+    <!-- Google Translate Widget Code -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',  // Change to your website's original language
+                includedLanguages: 'en,fr',  // Include the languages you want to support
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
